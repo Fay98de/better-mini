@@ -1,0 +1,29 @@
+{
+  "name": "better-mini",
+  "version": "0.1.0",
+  "description": "",
+  "keywords": [
+    "mini-program"
+  ],
+  "author": "Fay <fay98de@gmail.com>",
+  "homepage": "https://github.com/Fay98de",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Fay98de/better-mini.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/Fay98de/better-mini/issues"
+  }
+}
