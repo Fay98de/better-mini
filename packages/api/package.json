@@ -33,7 +33,7 @@
   "devDependencies": {
     "typescript": "^4.2.4"
   },
-  "gitHead": "7c9cd8a793f42bf6d9503dfd2fe8bfb5ddfe1fcd",
+  "gitHead": "617453dd52c801dcb23753a5245536181c24c116",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   }
