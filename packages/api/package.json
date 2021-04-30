@@ -1,6 +1,6 @@
 {
   "name": "@better-mini/api",
-  "version": "0.1.0",
+  "version": "1.0.0-alpha.0",
   "description": "",
   "main": "lib/index.js",
   "types": "./types/index.d.ts",
@@ -30,7 +30,6 @@
   "bugs": {
     "url": "https://github.com/Fay98de/better-mini/issues"
   },
-  "dependencies": {},
   "devDependencies": {
     "typescript": "^4.2.4"
   }
