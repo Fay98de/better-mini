@@ -6,6 +6,7 @@ package-lock.json
 
 *.log
 
+packages/api/lib
 packages/logger/dist
 packages/logger/lib
 packages/logger-example/dist
