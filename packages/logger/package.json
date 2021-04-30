@@ -61,6 +61,7 @@
     "@types/react-dom": "^16.9.5",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
+    "rimraf": "^3.0.2",
     "rollup": "^2.3.1",
     "rollup-plugin-copy": "^3.3.0",
     "rollup-plugin-typescript2": "^0.27.0",
@@ -73,7 +74,7 @@
     "react": ">=16.13.0",
     "react-dom": ">=16.13.0"
   },
-  "gitHead": "ace24e728cb33b51d3f43a712171620304c0d492",
+  "gitHead": "7c9cd8a793f42bf6d9503dfd2fe8bfb5ddfe1fcd",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   }
