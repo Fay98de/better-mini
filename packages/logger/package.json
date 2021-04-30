@@ -72,5 +72,9 @@
     "@tarojs/react": ">=3",
     "react": ">=16.13.0",
     "react-dom": ">=16.13.0"
+  },
+  "gitHead": "ace24e728cb33b51d3f43a712171620304c0d492",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   }
 }
