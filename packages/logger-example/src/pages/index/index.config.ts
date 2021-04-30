@@ -1,3 +1,3 @@
 export default {
-  navigationBarTitleText: 'Home',
+  navigationBarTitleText: 'better-mini/logger',
 }

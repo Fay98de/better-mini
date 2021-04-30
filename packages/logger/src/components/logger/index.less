@@ -1,19 +1,18 @@
 .logger-view {
   width: 100vw;
-  height: 400px;
   position: fixed;
   left: 0;
   bottom: 0;
   background-color: #fff;
   z-index: 9998;
-  &.show {
+  &.expand {
     .logger-list {
       display: block;
     }
   }
   .logger-list {
     width: 100%;
-    height: 100%;
+    height: 0;
     box-shadow: 0 0 10px 5px #ccc;
     display: none;
   }
@@ -23,10 +22,11 @@
     font-family: 'Courier New', Courier, monospace;
     word-break: break-word;
     &.log {
-      border-left: 1px solid #00f;
+      // border-left: 4px solid #00f;
     }
     &.error {
-      border-left: 1px solid #f00;
+      color: #f00;
+      // border-left: 4px solid #f00;
     }
   }
   .logger-btn {

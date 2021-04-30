@@ -1,1 +1,13 @@
 node_modules
+
+package-lock.json
+
+.DS_Store
+
+*.log
+
+packages/logger/dist
+packages/logger/lib
+packages/logger-example/dist
+packages/alipay-example/dist
+packages/wechat-example/dist

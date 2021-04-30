@@ -1,12 +1,11 @@
 import React from 'react'
-import Taro from '@tarojs/taro'
+import Taro, { pxTransform } from '@tarojs/taro'
 import { View, ScrollView, Text } from '@tarojs/components'
 import { LoggerProps, LoggerState } from '../../../types/logger'
 import cls from 'classnames'
 
 function getCurrentPageId() {
   const currentInstance = Taro.getCurrentInstance()
-  console.log(currentInstance)
   const { page } = currentInstance
   // 不同平台的页面 id 取值不一样
   const pageId = (page as any).$id || (page as any).__wxExparserNodeId__
@@ -15,12 +14,14 @@ function getCurrentPageId() {
 
 class Logger extends React.PureComponent<LoggerProps, LoggerState> {
   static LOG_MAX: number = 30
+  static HEIGHT: number = 400
   static instances: Record<string, Logger> = {}
 
   static defaultProps = {
     visible: false,
     beautify: true,
     max: Logger.LOG_MAX,
+    height: 400,
   }
 
   static getLogger() {
@@ -43,12 +44,15 @@ class Logger extends React.PureComponent<LoggerProps, LoggerState> {
   }
 
   state: LoggerState = {
-    show: true,
+    expand: true,
     logs: [],
   }
 
-  constructor(props) {
+  constructor(props: LoggerProps) {
     super(props)
+    if (typeof props.expand !== 'undefined') {
+      this.state.expand = props.expand
+    }
     this.init()
   }
 
@@ -61,6 +65,7 @@ class Logger extends React.PureComponent<LoggerProps, LoggerState> {
     const { beautify } = this.props
     if (typeof o === 'undefined') return 'undefined'
     if (typeof o === 'string') return o
+    if (o instanceof Error) return o.toString()
     return beautify ? JSON.stringify(o, undefined, '\u00a0\u00a0') : JSON.stringify(o)
   }
 
@@ -80,8 +85,8 @@ class Logger extends React.PureComponent<LoggerProps, LoggerState> {
   }
 
   toggle = () => {
-    const { show } = this.state
-    this.setState({ show: !show })
+    const { expand } = this.state
+    this.setState({ expand: !expand })
   }
 
   clear = () => {
@@ -89,14 +94,19 @@ class Logger extends React.PureComponent<LoggerProps, LoggerState> {
   }
 
   render() {
-    const { className, visible } = this.props
-    const { show, currentLogId, logs } = this.state
+    const { className, visible, height } = this.props
+    const { expand, currentLogId, logs } = this.state
 
     if (!visible) return null
 
     return (
-      <View {...this.props} className={cls('logger-view', className, { show })}>
-        <ScrollView className="logger-list" scrollY scrollIntoView={currentLogId}>
+      <View {...this.props} className={cls('logger-view', className, { expand })}>
+        <ScrollView
+          className="logger-list"
+          style={{ height: expand ? pxTransform(height!) : 0 }}
+          scrollY
+          scrollIntoView={currentLogId}
+        >
           {logs.map((log, index) => (
             <Text
               key={index}
@@ -104,14 +114,13 @@ class Logger extends React.PureComponent<LoggerProps, LoggerState> {
               className={cls('logger-text', log.type)}
               style={{ backgroundColor: index % 2 ? '#eee' : undefined }}
               selectable
-              // decode
             >
               {log.text}
             </Text>
           ))}
         </ScrollView>
         <View className="logger-btn btn-toggle" onClick={this.toggle}>
-          {show ? '展开' : '收起'}
+          {expand ? '收起' : '展开'}
         </View>
         <View className="logger-btn btn-clear" onClick={this.clear}>
           清空
