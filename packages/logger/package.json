@@ -1,6 +1,6 @@
 {
   "name": "@better-mini/logger",
-  "version": "0.1.0",
+  "version": "1.0.0-alpha.3",
   "description": "Taro Logger 组件，用于真机中日志输出阅读。",
   "module": "dist/index.esm.js",
   "main": "dist/index.js",
@@ -61,6 +61,7 @@
     "@types/react-dom": "^16.9.5",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
+    "rimraf": "^3.0.2",
     "rollup": "^2.3.1",
     "rollup-plugin-copy": "^3.3.0",
     "rollup-plugin-typescript2": "^0.27.0",
@@ -72,5 +73,10 @@
     "@tarojs/react": ">=3",
     "react": ">=16.13.0",
     "react-dom": ">=16.13.0"
+  },
+  "gitHead": "2fac5a85c31450577488f11b4b9cdf3282682d54",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   }
 }

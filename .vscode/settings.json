@@ -2,5 +2,9 @@
   "editor.formatOnSave": true,
   "editor.formatOnPaste": false,
   "prettier.prettierPath": ".prettierrc",
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[markdown]": {
+    "editor.fontFamily": "Sarasa Mono SC, Noto Sans Mono CJK SC, monospace",
+    "editor.fontSize": 13
+  }
 }

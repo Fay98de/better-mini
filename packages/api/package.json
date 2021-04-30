@@ -1,0 +1,41 @@
+{
+  "name": "@better-mini/api",
+  "version": "1.0.0-alpha.3",
+  "description": "",
+  "main": "lib/index.js",
+  "types": "./types/index.d.ts",
+  "keywords": [
+    "mini-program"
+  ],
+  "author": "Fay <fay98de@gmail.com>",
+  "homepage": "https://github.com/Fay98de",
+  "license": "MIT",
+  "scripts": {
+    "start": "tsc -w",
+    "prepublishOnly": "tsc",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib",
+    "types"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Fay98de/better-mini.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Fay98de/better-mini/issues"
+  },
+  "devDependencies": {
+    "typescript": "^4.2.4"
+  },
+  "gitHead": "2fac5a85c31450577488f11b4b9cdf3282682d54",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  }
+}
