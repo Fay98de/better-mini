@@ -110,7 +110,7 @@ console.log(mini.env) // 属性读取
 
 ## 示例
 
-<img width="414" src="./assets/screenshot-wechat.png" />
+<img width="414" src="https://raw.githubusercontent.com/Fay98de/better-mini/main/packages/api/assets/screenshot-wechat.png" />
 
 ## TODO
 

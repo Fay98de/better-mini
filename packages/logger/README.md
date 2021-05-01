@@ -4,7 +4,7 @@
 
 _注：目前仅支持 Taro 3.0_
 
-<img width="414" src="./assets/screenshot.png" />
+<img width="414" src="https://raw.githubusercontent.com/Fay98de/better-mini/main/packages/logger/assets/screenshot.png" />
 
 ## 使用
 
