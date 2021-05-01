@@ -1,6 +1,6 @@
 {
   "name": "@better-mini/api",
-  "version": "1.0.0-alpha.3",
+  "version": "1.0.0-alpha.4",
   "description": "小程序 API Promisify，支持 async/await，支持微信、支付宝等平台。",
   "main": "lib/index.js",
   "types": "./types/index.d.ts",
