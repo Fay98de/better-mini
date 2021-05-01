@@ -1,7 +1,7 @@
 {
   "name": "@better-mini/logger",
   "version": "1.0.0-alpha.3",
-  "description": "Taro Logger 组件，用于真机中日志输出阅读。",
+  "description": "Taro Logger 组件 React 版，用于真机中日志输出和查看。",
   "module": "dist/index.esm.js",
   "main": "dist/index.js",
   "source": "src/index.ts",
@@ -11,6 +11,10 @@
     "*.css"
   ],
   "keywords": [
+    "小程序",
+    "小程序日志",
+    "mini-program",
+    "taro-logger",
     "logger"
   ],
   "files": [

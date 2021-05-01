@@ -1,11 +1,16 @@
 {
   "name": "@better-mini/api",
   "version": "1.0.0-alpha.3",
-  "description": "",
+  "description": "小程序 API Promisify，支持 async/await，支持微信、支付宝等平台。",
   "main": "lib/index.js",
   "types": "./types/index.d.ts",
   "keywords": [
-    "mini-program"
+    "小程序",
+    "小程序 API",
+    "mini-program",
+    "promise",
+    "async-await",
+    "api-promisify"
   ],
   "author": "Fay <fay98de@gmail.com>",
   "homepage": "https://github.com/Fay98de",
