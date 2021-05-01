@@ -1,6 +1,6 @@
 {
   "name": "alipay-example",
-  "version": "1.0.0-alpha.4",
+  "version": "1.0.0-alpha.5",
   "private": true,
   "description": "Alipay mini program example.",
   "templateInfo": {
@@ -35,8 +35,8 @@
   "license": "MIT",
   "dependencies": {
     "@babel/runtime": "^7.7.7",
-    "@better-mini/api": "^1.0.0-alpha.4",
-    "@better-mini/logger": "^1.0.0-alpha.4",
+    "@better-mini/api": "^1.0.0-alpha.5",
+    "@better-mini/logger": "^1.0.0-alpha.5",
     "@tarojs/components": "3.2.5",
     "@tarojs/react": "3.2.5",
     "@tarojs/runtime": "3.2.5",
